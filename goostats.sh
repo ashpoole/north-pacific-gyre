@@ -8,4 +8,4 @@ min=$( cat ${fname} | sort | head -1)
 min=$( cat ${fname} | sort | tail -1)
 range=$( echo "${max}-${min}" | bc -l)
 
-redundant code
+echo "The data are in ${min} - ${max} with a range of ${range}"
